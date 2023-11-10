@@ -1,1 +1,60 @@
-hey this is a test, let's see if this pushes
+<!--  emmet abbreviation for starting HTML boiler plate code, ! or BANG then TAB  -->
+
+
+<!DOCTYPE html>
+
+<!-- -DOCTYPE: declares what type of document it is, in this case HTML document
+    - lang: notes what the language of our document is.
+    - The head tag holds all of our meta data for the document.
+    - This holds various information such as the title of the document, viewport settings, and links.
+-->
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+
+        <!-- - charset: defines which characters are available to us, such as 0-9, A-Z, & symbols.
+             - UTF-8 covers almost all characters
+             - name & content: Details on the user viewport
+             - title: details the title of our document. Displayed at the top in the tab bar.
+         -->
+    </head>
+    <body>
+        <!-- The body tag:
+            - What the client will display when rendering.
+            - What you see on the page in the browser.
+         -->
+        <h1>Examples of Structural Elements</h1>
+        <img />
+        <div>
+            <p> - h1: heading. These range from h1-h6, getting smaller as the number increases.</p>
+            <p> - div: a division</p>
+            <p> - img: provides us an elemtn to present an image. Self Closing tag.</p>
+            <p> - span: We can write a block of text without line breaks.</p>
+            
+        </div>
+        <h2>Sample H2</h2>
+        <h3>Sample H3</h3>
+        <h6>Sample H6</h6>
+
+        <!-- Through emmet, we can add blocks of text via "lorem". Great way to create filler text or content for mock-ups. -->
+        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, delectus.</span>
+
+        <br />
+
+        <h2>Lists</h2>
+        <h3>Common Git Commands</h3>
+        <ol>
+            <li><i>git init</i>: Initializes an empty git repo</li>
+            <li><i>git add .</i>: Add files to the staging area</li>
+            <li><i>git commit -m "some msg"</i>: Writes changes to the files in staging</li>
+            <li><i>git push origin *branch*</i>: Pushing updated changes to remote repo "main" branch by default</li>
+
+
+        </ol>
+
+
+    </body>
+</html>
