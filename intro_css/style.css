@@ -71,3 +71,30 @@ nav > .btn {
     color: black;
     border-radius: 25px;
 }
+
+/* 
+
+    ! CSS Hierarchy
+
+        This is going to allow CSS to use distinct levels of "priority" to style our elements. The order of priority from weakest to strongest is:
+            - 
+
+
+*/
+
+/* Pseudo-selector ':' visited, hover, active, link */
+
+a:visited {
+    color: purple;
+
+}
+
+a:hover {
+    color: red;
+    
+}
+
+a:active {
+    color: green;
+    
+}
