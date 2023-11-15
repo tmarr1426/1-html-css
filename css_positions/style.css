@@ -1,0 +1,131 @@
+/* 
+    CSS position properties
+
+    ? Static
+    * default
+    * positioned in relation to elements
+    * top, bottom, left, right, z-index have NO EFFECT
+
+    ? Relative 
+    * just like static
+    * can be changed using top, bottom, left, right, z-index
+    * values are relative to its original static position 
+
+    ? Absolute
+    * remove the element from the flow
+    * positions it relative to the parent container
+    * if parent is static, it will move outside of the parent container
+    * if parent is relative, it will move within the parent container
+    * positioning defined by top, bottom, left, right, z-index
+
+    ? Fixed 
+    * like absolute
+    * positioned to the viewport
+    * doesn't move when scrolling
+    * positioning defined by top, bottom, left, right, z-index
+
+    ? Sticky
+    * mix of relative and fixed
+    * relative to the flow
+    * position definition used for when you start scrolling
+    * stays fixed when scrolling; relative when stationary
+
+*/
+
+.parent-container {
+    background-color: beige;
+    margin: 1em;
+    border: 2px solid black;
+    width: 100vw;
+  
+    /* To test out the 'Sticky' position, comment the height back in, and scroll down */
+    height: 100vh;
+    padding: 5px;
+    position: relative;
+  }
+  
+  .child {
+    padding: 25px;
+  }
+  
+  .child1 {
+    border: 2px solid red;
+    background-color: red;
+    position: static;
+    /* Static -- position properties have no effect, default position */
+    /* right: 250px; */
+  }
+  .child2 {
+    border: 2px solid blueviolet;
+    background-color: blueviolet;
+    position: relative;
+    /* Relative -- position properties will work, can put this on parent container to house child element with the "position: absolute" */
+    /* right: 250px; */
+  }
+  .child3 {
+    border: 2px solid green;
+    background-color: green;
+    /* Absolute -- position properties have will work, and will 'sit' within a parent container with "position: relative" */
+    /* position: absolute;
+    top: 0;
+    left: 0; */
+  }
+  .child4 {
+    border: 2px solid teal;
+    background-color: teal;
+    /* Fixed -- element will remain in place, outside the flow of the document */
+    /* position: fixed;
+    top: 0px; */
+  }
+  .child5 {
+    border: 2px solid grey;
+    background-color: grey;
+    /* Sticky -- element will appear as usual, but when scrolling out of view, the element will remain (Ensuring that its container has the room for it. Hint: add a dramatic height (100vh) to the .parent-container and scroll down) */
+    /* position: sticky;
+    top: 0px; */
+  }
+  /* 
+      ? Display Property
+      * treats an element as block or inline
+      * block is created top-bottom, spans full page width
+      * inline is created side-by-side, spans width of its content
+  */
+  
+  .display-container {
+    margin-top: 2em;
+  }
+  
+  .block-container {
+    /* Will make these elements appear side-by-side */
+    /* display: inline; */
+    border: 2px solid black;
+    margin: 5px;
+  }
+  
+  .inline-element {
+    /* To make default inline elements (buttons, inputs) stack on top of one another */
+    display: block;
+  }
+  
+  .inline-block {
+    border: 2px solid black;
+    /* Will place elements side-by-side, but wont take up the whole width of the page, only the content inside */
+    display: inline-block;
+    margin: 5px;
+  }
+  
+  .float-container {
+    margin-top: 2em;
+    border: 2px solid blue;
+    height: 20vw;
+  }
+  
+  .float-box {
+    margin: 5px;
+    border: 2px solid orange;
+    background-color: orange;
+    width: 50px;
+    height: 50px;
+    /* Can position the box left or right */
+    float: left;
+  }
