@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    background-color: cornflowerblue;
+    font-family:Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column; 
+}
+
+nav {
+    background-color: rgb(187, 152, 39);
+    display: flex;
+    /* Allows us to change direction of the flex */
+    /* flex-firection: row; */
+    /* Aligns flex items to the end */
+    justify-content: flex-end;
+    /* Allows us to modify the space between flex items */
+    gap: 1em;
+    align-items: center;
+    /* Testing out height with the swap of justify and align items. Row vs column */
+    height: 5em;
+}
+
+.main-container {
+    display: flex;
+    margin-top: 3em;
+    border: 2px solid black;
+    width: 100vw;
+    /* flex-direction: column; */
+    /* If we use row we can have a new row appear with flex-wrap, respecting the width and height of it's container */
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    /* Handles the white space on flex items that are wrapped within a constrained parent, need extra room to see effect */
+    align-content: center;
+    gap: 1em;
+
+}
+
+.nav-link {
+    text-decoration: none;
+    color: white;
+}
+
+.c {
+    width: 200px;
+    height: 100px;
+    min-width: 200px;
+    min-height: 100px;
+}
+
+.c1 {
+    border: 2px solid red;
+}
+.c2 {
+    border: 2px solid blueviolet;
+}
+.c3 {
+    border: 2px solid orange;
+}
+.c4 {
+    border: 2px solid rgb(255, 255, 255);
+}
+.c5 {
+    border: 2px solid rgb(43, 226, 89);
+}
+
+
+.article-preview {
+    margin-top: 1em;
+    width: 100vw;
+    display: flex;
+    flex-direction: row-reverse;
+    /* Test out flex wrap */
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+.article-preview img{
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+}
+
+.article-preview .text {
+    max-width: 400px;
+}
